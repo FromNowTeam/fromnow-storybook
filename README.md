@@ -1,20 +1,5 @@
-`react-native` `tailwindcss` `react-navigation`
+# fromnow storybook
 
-### android 
+🔗 _**<a href="https://fromnow-storybook.vercel.app">storybook deploy link</a>**_
 
-
-```bash
-# 실행
-yarn android
-```
-
-
-
-### ios
-
-xcode version 15.3 사용
-
-```bash
-# 실행
-yarn ios
-```
+`storybook` `react-native` `tailwindcss`
