@@ -20,6 +20,8 @@ Basic.args = {
 };
 Basic.argTypes = {
   mode: {
+    options: ['black', 'error', 'trust', 'gray'],
+    control: { type: 'radio' },
     description: '옵션',
   },
   placeholder: {
