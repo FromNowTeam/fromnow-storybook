@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkFromNowStorybook=self.webpackChunkFromNowStorybook||[]).push([[3512],{"./src/assets/fonts/uhbee/UhBeemysen.ttf":(module,__unused_webpack_exports,__webpack_require__)=>{module.exports=__webpack_require__.p+"static/media/UhBeemysen.6d883198.ttf"}}]);

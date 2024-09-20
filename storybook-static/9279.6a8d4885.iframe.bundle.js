@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkFromNowStorybook=self.webpackChunkFromNowStorybook||[]).push([[9279],{"./src/assets/fonts/pretendard/Pretendard-Bold.otf":(module,__unused_webpack_exports,__webpack_require__)=>{module.exports=__webpack_require__.p+"static/media/Pretendard-Bold.4e72d46e.otf"}}]);

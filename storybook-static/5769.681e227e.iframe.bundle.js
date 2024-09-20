@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkFromNowStorybook=self.webpackChunkFromNowStorybook||[]).push([[5769],{"./src/assets/fonts/pretendard/Pretendard-SemiBold.otf":(module,__unused_webpack_exports,__webpack_require__)=>{module.exports=__webpack_require__.p+"static/media/Pretendard-SemiBold.4b3283bc.otf"}}]);

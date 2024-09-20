@@ -1,0 +1,19 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "paths": {
+      "@fromnow/*": ["./libs/fromnow/*"],
+      "@assets/*": ["./libs/fromnow/src/assets/*"],
+      "@components/*": ["./libs/fromnow/src/components/*"],
+      "@screens/*": ["./libs/fromnow/src/screens/*"],
+      "@styles/*": ["./libs/fromnow/src/styles/*"],
+      "@hooks/*": ["./libs/fromnow/src/hooks/*"],
+      "@utils/*": ["./libs/fromnow/src/utils/*"],
+      "@store/*": ["./libs/fromnow/src/store/*"],
+      "@clientTypes/*": ["./libs/fromnow/src/types/*"],
+      "@api/*": ["./libs/fromnow/src/api/*"],
+    },
+  },
+}
