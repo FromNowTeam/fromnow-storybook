@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import DialogModal from '@fromnow/src/components/common/DialogModal';
+import Button from '@fromnow/src/components/common/Button';
 
 export default {
   title: 'common/DialogModal',
@@ -8,10 +9,16 @@ export default {
   tags: ['autodocs'],
 } as Meta<typeof DialogModal>;
 
-export const Basic: StoryFn<typeof DialogModal> = args => <DialogModal {...args} />;
+export const Basic: StoryFn<typeof DialogModal> = args => {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <Button onPress={() => setOpen(true)}>클릭하면 모달이 떠요!</Button>
+      <DialogModal {...args} open={open} setOpen={setOpen} />
+    </>
+  );
+};
 Basic.args = {
-  open: true,
-  setOpen: () => {},
   title: '제목을 입력하세요',
   description: '모달 설명입니다.',
   confirm: () => alert('확인 버튼 클릭!'),
