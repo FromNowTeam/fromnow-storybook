@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import Input from '@fromnow/src/components/common/Input';
 
@@ -8,14 +8,16 @@ export default {
   tags: ['autodocs'],
 } as Meta<typeof Input>;
 
-export const Basic: StoryFn<typeof Input> = args => <Input {...args} />;
+export const Basic: StoryFn<typeof Input> = args => {
+  const [value, setValue] = useState('');
+
+  return <Input value={value} setValue={setValue} {...args} />;
+};
 Basic.args = {
   mode: 'black',
   placeholder: '내용을 입력해 주세요.',
   editable: true,
   search: false,
-  value: '',
-  setValue: () => {},
   onSubmitEditing: () => {},
 };
 Basic.argTypes = {
