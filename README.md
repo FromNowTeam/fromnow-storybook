@@ -2,4 +2,4 @@
 
 🔗 _**<a href="https://fromnow-storybook.vercel.app">storybook deploy link</a>**_
 
-`storybook` `react-native` `tailwindcss`
+`storybook` `typescript` `react-native` `tailwindcss`

@@ -10,7 +10,7 @@ export default {
 } as Meta<typeof Timer>;
 
 export const Basic: StoryFn<typeof Timer> = () => (
-  <View className="bg-black/60">
+  <View className="bg-black/10">
     <Timer />
   </View>
 );
