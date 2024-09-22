@@ -27,10 +27,10 @@ Basic.args = {
 };
 Basic.argTypes = {
   open: {
-    description: '(필수) 모달의 열림 상태',
+    description: '(필수) state 모달의 열림 상태',
   },
   setOpen: {
-    description: '(필수) 모달 상태 변경 함수',
+    description: '(필수) setState 모달 상태 변경',
   },
   title: {
     description: '(옵션) 모달 제목',
