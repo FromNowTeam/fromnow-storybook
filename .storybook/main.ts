@@ -1,4 +1,5 @@
 import type {StorybookConfig} from '@storybook/react-webpack5';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -41,6 +42,10 @@ const config: StorybookConfig = {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
+    });
+    config.module.rules.push({
+      test: /react-native-fs/,
+      use: 'null-loader',
     });
     
     return config;

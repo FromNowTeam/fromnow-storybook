@@ -5044,6 +5044,7 @@ __metadata:
     metro-react-native-babel-preset: "npm:^0.77.0"
     moti: "npm:^0.29.0"
     nativewind: "npm:^2.0.11"
+    null-loader: "npm:^4.0.1"
     postcss: "npm:^8.4.47"
     prettier: "npm:2.8.8"
     react: "npm:18.3.1"
@@ -5051,6 +5052,7 @@ __metadata:
     react-hook-form: "npm:^7.53.0"
     react-native: "npm:0.74.3"
     react-native-dotenv: "npm:^3.4.11"
+    react-native-fs: "npm:^2.20.0"
     react-native-gesture-handler: "npm:^2.19.0"
     react-native-svg: "npm:^15.7.1"
     react-native-svg-transformer: "npm:^1.5.0"
@@ -5726,6 +5728,13 @@ __metadata:
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
   checksum: 10c0/9308baf0a7e4838a82bbfd11e01b1cb0f0cf2893bc1676c27c2a8c0e70cbae1c59120c3268517a8ae7fb6376b4639ef81ca22582611dbee4ed28df945134aaee
+  languageName: node
+  linkType: hard
+
+"base-64@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "base-64@npm:0.1.0"
+  checksum: 10c0/fe0dcf076e823f04db7ee9b02495be08a91c445fbc6db03cb9913be9680e2fcc0af8b74459041fe08ad16800b1f65a549501d8f08696a8a6d32880789b7de69d
   languageName: node
   linkType: hard
 
@@ -11485,6 +11494,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"null-loader@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "null-loader@npm:4.0.1"
+  dependencies:
+    loader-utils: "npm:^2.0.0"
+    schema-utils: "npm:^3.0.0"
+  peerDependencies:
+    webpack: ^4.0.0 || ^5.0.0
+  checksum: 10c0/fe9a74a928c9ddc1eab7be0e4322516439562d6efd6feeb0f7c61777d4b79a6a8e5a6bc8133deb59408f3f423bdf84c154a88168154a583154e9e33d544b4d42
+  languageName: node
+  linkType: hard
+
 "nullthrows@npm:^1.1.1":
   version: 1.1.1
   resolution: "nullthrows@npm:1.1.1"
@@ -12635,6 +12656,22 @@ __metadata:
   peerDependencies:
     "@babel/runtime": ^7.20.6
   checksum: 10c0/9ed4a37fb59030706d17a1cc49d05af9d8fc57dcb2ef97e122b844f3ab6f6331ebc089afac559fe5bddf37806aa282b4118005f1b27aae5e37fdc3fc8bd7625c
+  languageName: node
+  linkType: hard
+
+"react-native-fs@npm:^2.20.0":
+  version: 2.20.0
+  resolution: "react-native-fs@npm:2.20.0"
+  dependencies:
+    base-64: "npm:^0.1.0"
+    utf8: "npm:^3.0.0"
+  peerDependencies:
+    react-native: "*"
+    react-native-windows: "*"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 10c0/3722b5568610cd72f319c90f60ba8b019a005d015f27e49017ddd0ea314d1ea6991f79288c28549fdc2964dc81c0fa24f8a5f87a4a6283c97c6ea88d4caa6851
   languageName: node
   linkType: hard
 
@@ -14762,6 +14799,13 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 10c0/23b1597c10adf15b26ade9e8c318d8cc0abc9ec0ab5fc7ca7338da92e89c2536abd150a5891bf076836c352fdfa104fc7231fb48f806fd9960e0cbe03601abaf
+  languageName: node
+  linkType: hard
+
+"utf8@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "utf8@npm:3.0.0"
+  checksum: 10c0/675d008bab65fc463ce718d5cae8fd4c063540f269e4f25afebce643098439d53e7164bb1f193e0c3852825c7e3e32fbd8641163d19a618dbb53f1f09acb0d5a
   languageName: node
   linkType: hard
 

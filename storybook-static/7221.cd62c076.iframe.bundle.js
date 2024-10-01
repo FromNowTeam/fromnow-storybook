@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkFromNowStorybook=self.webpackChunkFromNowStorybook||[]).push([[7221],{"./src/assets/png/board.png":(module,__unused_webpack_exports,__webpack_require__)=>{module.exports=__webpack_require__.p+"static/media/board.d8f88d02.png"}}]);

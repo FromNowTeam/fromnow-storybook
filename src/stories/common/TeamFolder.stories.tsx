@@ -20,7 +20,7 @@ Basic.args = {
   id: 1,
   color: 'pink',
   title: '아줌마들의 우정은 디질때까지',
-  users: [profilePng, profilePng, profilePng],
+  photoUrls: [profilePng, profilePng, profilePng],
 };
 Basic.argTypes = {
   isNew: {
@@ -37,7 +37,7 @@ Basic.argTypes = {
   title: {
     description: '필수',
   },
-  users: {
+  photoUrls: {
     description: '필수',
   },
 };
