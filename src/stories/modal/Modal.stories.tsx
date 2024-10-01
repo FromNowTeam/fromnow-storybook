@@ -5,7 +5,7 @@ import Button from '@fromnow/src/components/common/Button';
 import ModalManager, { useModal } from '@fromnow/src/components/Modal/ModalManager';
 
 export default {
-  title: 'modal/ConfirmModal',
+  title: 'modal/Modal',
   component: ConfirmModal,
   tags: ['autodocs'],
   decorators: [
@@ -21,7 +21,7 @@ export const Basic: StoryFn<typeof ConfirmModal> = args => {
   const { showModal } = useModal();
   const openModal = () => {
     showModal({
-      type: 'confirm',
+      type: args.type,
       title: args.title,
       description: args.description,
       confirm: () => alert('확인 버튼 클릭!'),
@@ -32,11 +32,17 @@ export const Basic: StoryFn<typeof ConfirmModal> = args => {
 };
 
 Basic.args = {
+  type: 'confirm',
   title: '제목을 입력하세요',
   description: '모달 설명입니다.',
 };
-
 Basic.argTypes = {
+  type: {
+    description: '필수',
+  },
+  open: {
+    description: '필수',
+  },
   title: {
     description: '(옵션) 모달 제목',
   },
@@ -45,5 +51,8 @@ Basic.argTypes = {
   },
   confirm: {
     description: '(옵션) 확인 버튼 클릭 시 실행할 함수',
+  },
+  missionImg: {
+    description: '옵션',
   },
 };
