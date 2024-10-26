@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import SelectTeamItem from '@fromnow/src/components/PostEdit/SelectTeamItem';
+import SelectTeamItem from '@fromnow/src/components/BoardEdit/SelectTeamItem';
 import profilePng from '../../assets/png/profile.png';
 
 export default {
@@ -17,6 +17,10 @@ Basic.args = {
   toggleSharing: (id: number) => {
     alert(id);
   },
+  createdAt: '2024-10-26',
+  recivedAt: '2024-10-26',
+  isNew: false,
+  isSharing: false,
 };
 Basic.argTypes = {
   id: {
@@ -29,6 +33,18 @@ Basic.argTypes = {
     description: '필수',
   },
   toggleSharing: {
+    description: '필수',
+  },
+  createdAt: {
+    description: '필수',
+  },
+  recivedAt: {
+    description: '필수',
+  },
+  isNew: {
+    description: '필수',
+  },
+  isSharing: {
     description: '필수',
   },
 };

@@ -11,18 +11,26 @@ export default {
 
 export const Basic: StoryFn<typeof FriendItem> = args => <FriendItem {...args} />;
 Basic.args = {
-  profile: profilePng,
-  nickname: 'tata',
-  isFriend: true,
+  memberId: 1,
+  profileName: 'tata',
+  photoUrl: profilePng,
+  owner: false,
+  friend: false,
 };
 Basic.argTypes = {
-  profile: {
+  memberId: {
     description: '필수',
   },
-  nickname: {
+  profileName: {
     description: '필수',
   },
-  isFriend: {
+  photoUrl: {
+    description: '필수',
+  },
+  owner: {
+    description: '필수',
+  },
+  friend: {
     description: '필수',
   },
 };

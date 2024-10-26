@@ -21,6 +21,7 @@ Basic.args = {
   color: 'pink',
   title: '아줌마들의 우정은 디질때까지',
   photoUrls: [profilePng, profilePng, profilePng],
+  date: new Date().toISOString(),
 };
 Basic.argTypes = {
   isNew: {
@@ -38,6 +39,9 @@ Basic.argTypes = {
     description: '필수',
   },
   photoUrls: {
+    description: '필수',
+  },
+  date: {
     description: '필수',
   },
 };

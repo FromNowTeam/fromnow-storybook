@@ -17,25 +17,33 @@ Basic.args = {
   profileName: 'TATA',
   contentPhotoUrl: boardPng,
   content: '나는 어제 디자이너를 죽였다\n이유는 터무니 없다\n개발할게 너무 많았기 때문이다',
-  createdDate: '00:00:00',
+  createdDate: new Date().toISOString(),
+  likes: 99,
+  liked: false,
 };
 Basic.argTypes = {
   boardId: {
-    description: '옵션',
+    description: '필수',
   },
   profilePhotoUrl: {
-    description: '옵션',
+    description: '필수',
   },
   profileName: {
-    description: '옵션',
+    description: '필수',
   },
   contentPhotoUrl: {
-    description: '옵션',
+    description: '필수',
   },
   content: {
-    description: '옵션',
+    description: '필수',
   },
   createdDate: {
-    description: '옵션',
+    description: '필수',
+  },
+  likes: {
+    description: '필수',
+  },
+  liked: {
+    description: '필수',
   },
 };
