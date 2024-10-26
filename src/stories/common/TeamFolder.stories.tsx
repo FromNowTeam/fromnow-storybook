@@ -11,7 +11,7 @@ export default {
 } as Meta<typeof TeamFolder>;
 
 export const Basic: StoryFn<typeof TeamFolder> = args => (
-  <View className="w-[162px] h-[162px]">
+  <View className="w-full justify-center items-center">
     <TeamFolder {...args} />
   </View>
 );
@@ -21,7 +21,8 @@ Basic.args = {
   color: 'pink',
   title: '아줌마들의 우정은 디질때까지',
   photoUrls: [profilePng, profilePng, profilePng],
-  date: new Date().toISOString(),
+  createdAt: new Date().toISOString(),
+  recivedAt: new Date().toISOString(),
 };
 Basic.argTypes = {
   isNew: {
@@ -41,7 +42,10 @@ Basic.argTypes = {
   photoUrls: {
     description: '필수',
   },
-  date: {
+  createdAt: {
+    description: '필수',
+  },
+  recivedAt: {
     description: '필수',
   },
 };

@@ -9,14 +9,15 @@ export default {
 } as Meta<typeof HomeHeader>;
 
 export const Basic: StoryFn<typeof HomeHeader> = () => {
-  const [isEdit, setIsEdit] = useState(false);
-  return <HomeHeader isEdit={isEdit} setIsEdit={setIsEdit} />;
+  // const [isEdit, setIsEdit] = useState(false);
+  // return <HomeHeader isEdit={isEdit} setIsEdit={setIsEdit} />;
+  return <HomeHeader />;
 };
-Basic.argTypes = {
-  isEdit: {
-    description: '필수',
-  },
-  setIsEdit: {
-    description: '필수',
-  },
-};
+// Basic.argTypes = {
+//   isEdit: {
+//     description: '필수',
+//   },
+//   setIsEdit: {
+//     description: '필수',
+//   },
+// };

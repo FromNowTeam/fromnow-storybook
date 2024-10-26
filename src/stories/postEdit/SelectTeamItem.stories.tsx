@@ -17,8 +17,8 @@ Basic.args = {
   toggleSharing: (id: number) => {
     alert(id);
   },
-  createdAt: '2024-10-26',
-  recivedAt: '2024-10-26',
+  createdAt: new Date().toISOString(),
+  recivedAt: new Date().toISOString(),
   isNew: false,
   isSharing: false,
 };
