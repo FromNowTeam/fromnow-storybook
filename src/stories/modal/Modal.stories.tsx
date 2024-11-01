@@ -8,13 +8,6 @@ export default {
   title: 'modal/Modal',
   component: ConfirmModal,
   tags: ['autodocs'],
-  decorators: [
-    Story => (
-      <ModalManager>
-        <Story />
-      </ModalManager>
-    ),
-  ],
 } as Meta<typeof ConfirmModal>;
 
 export const Basic: StoryFn<typeof ConfirmModal> = args => {

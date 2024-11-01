@@ -4,7 +4,7 @@ import SelectTeamItem from '@fromnow/src/components/BoardEdit/SelectTeamItem';
 import profilePng from '../../assets/png/profile.png';
 
 export default {
-  title: 'postEdit/SelectTeamItem',
+  title: 'boardEdit/SelectTeamItem',
   components: SelectTeamItem,
   tags: ['autodocs'],
 } as Meta<typeof SelectTeamItem>;
